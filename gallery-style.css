@@ -1,0 +1,220 @@
+
+html {
+    scroll-behavior: smooth;
+    margin-top: 5px;
+  }
+
+/** {
+    cursor: crosshair;
+} */
+
+
+body {
+    background: #080808;
+    color: white;
+}
+
+main {
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato';
+    align-items: center;
+    margin-top: 58px;
+}
+
+#title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#sketches {
+    display: flex;
+    flex-direction: column;
+    /*width: 65vw;
+    height: 85vh;*/
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.canvas {
+    width: 500px;
+    height: 500px;
+    background:white;
+    position: relative;
+}
+
+#buttonOne {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+#buttonTwo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+#buttonThree {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+#buttonFour {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+#buttonFive {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+#buttonSix {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #121212;
+}
+
+.carousel-inner {
+    width: 500px;
+    margin-left: 100px;
+}
+
+#carouselExampleIndicators {
+    width: 700px;
+}
+
+.carousel-control-prev-icon {
+    pointer-events: none;
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 425px;
+    top: 525px;
+}
+
+.carousel .carousel-indicators li.active {
+    background-color: #ccff00;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    box-sizing: border-box;
+    color: gray;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 85vw;
+    height: 45px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 5px;
+}
+
+.link {
+    text-align: center;
+    color :grey;
+    text-decoration: none;
+    /*transition-duration: 0.1s;*/
+}
+
+.link:hover {
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    /*text-shadow: #00FFB4 0 0 8px;*/
+}
+
+#menu:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    /*transition-duration: 0.1s;
+    text-shadow: #00FFB4 0 0 8px;*/
+}
+  
+.slide-menu {
+    font-size: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 124px;
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: height .3s ease;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin-left: 2px;
+    width: 20.3vw;
+    margin-left: 65vw;
+}
+  
+.slide-menu li {
+    /*background: lightskyblue;*/
+    padding-top : 6px;
+    padding-bottom: 6px;
+    width: 100px;
+    text-align: center;
+}
+
+
+/*#touch {position: absolute; opacity: 0; height: 0px;}*/
+#touch {opacity: 0; height: 0px;}
+  
+#touch:checked + .slide-menu {height: 200px;} 
+
+html {
+    overflow-y: scroll;
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #121212; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #242424; 
+}

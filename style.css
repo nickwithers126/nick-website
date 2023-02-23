@@ -1,0 +1,293 @@
+/** {
+    cursor: crosshair;
+}*/
+
+html {
+    overflow-y: scroll;
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #121212; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #242424; 
+    background: #ccff00;
+}
+
+body {
+    background: #080808;
+    color: white;
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    box-sizing: border-box;
+    /*background:lightgreen;*/
+    color: gray;
+    font-weight: 400;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 85vw;
+    height: 45px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 5px;
+}
+
+.link {
+    text-align: center;
+    color :grey;
+    text-decoration: none;
+    /*transition-duration: 0.1s;*/
+}
+
+.link:hover {
+    font-weight: 500;
+    color: white;
+    /*text-shadow: #00FFB4 0 0 8px;*/
+}
+
+#left { 
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+
+#resume {
+    margin-left: 40px;
+}
+
+/*nav {
+    width : 80px; 
+    height: 40px;
+    /*background: pink;
+    text-align: center;
+}*/
+  
+
+#menu:hover {
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    /*transition-duration: 0.1s;
+    text-shadow: #00FFB4 0 0 8px;*/
+}
+  
+.slide {
+    font-size: 24px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: height .3s ease;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+     
+    margin-left: 2px;
+    width: 20.3vw;
+    margin-left: 65vw;
+}
+  
+.slide li {
+    /*background: lightskyblue;*/
+    padding-top : 10px;
+    padding-bottom: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+
+/*#touch {position: absolute; opacity: 0; height: 0px;}*/
+#touch {opacity: 0; height: 0px;}
+  
+#touch:checked + .slide {height: 200px;} 
+
+
+#contact-buttons {
+    width: 65vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+}
+
+.button-outline {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*border: 1px solid #080808;*/
+    background-color: #121212;
+    transition-duration: 0.1s;
+}
+
+.button-outline:hover {
+    /*border-color: white;
+    box-shadow: #00FFB4 0px 0 4px;*/
+    background-color: #242424;
+}
+
+.link-contact {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-type {
+    margin-bottom: 3px;
+    margin-left: -20px;
+}
+
+#linkedin-link {
+    margin-bottom: 2px;
+}
+
+
+#name {
+    font-size: 72px;
+    color: grey;
+    /*height: 750px;*/
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#project-container {
+    color: grey;
+    height: 2500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project {
+    /*background: lightblue;*/
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    width: 500px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.project-name {
+    margin-left: auto;
+}
+
+.project-link {
+    margin-top: 6px;
+    margin-left: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+.project-description {
+    /*background: lightcoral;*/
+    color: white;
+    width: 500px;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.project-description li {
+    padding-bottom: 5px;
+}
+
+#about {
+    margin-top: 150px;
+    width: 60vw;
+}
+
+.wrapper {
+    /*This part is important for centering*/
+    height: 400px;
+    color: grey;
+    color: white;
+    margin-top: 250px;
+}
+
+#name {
+    font-size: 72px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: white;
+}
+
+.typing {
+    width: 13ch;
+    animation: typing 1.3s steps(13), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #ccff00;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+#about-holder {
+    margin-top: 140px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#me {
+    max-width: 250px;
+}
+
+#about {
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 16px;
+    min-width: 150px;
+    max-width: 200px;
+}
