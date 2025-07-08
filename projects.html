@@ -5,25 +5,26 @@
     <title>projects</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="yellow.PNG">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <div class = "header">
+    <div class="header">
 
-        <a class="link" id="home" href="index.html" >home</a>
+        <a class="link" id="home" href="index.html">home</a>
 
-        <label for="touch"><span id="menu">menu</span></label>               
-        
+        <label for="touch"><span id="menu">menu</span></label>
+
     </div>
 
-    <input type="checkbox" id="touch"> 
+    <input type="checkbox" id="touch">
     <ul class="slide">
-        <li><a class="link" href="projects.html">projects</a></li> 
-        <li><a class="link" href="gallery.html">gallery</a></li>
+        <li><a class="link" href="projects.html">projects</a></li>
+        <!-- <li><a class="link" href="gallery.html">gallery</a></li> -->
         <li><a class="link" href="about.html">about</a></li>
         <li><a class="link" href="contact.html">contact</a></li>
     </ul>
@@ -35,60 +36,105 @@
             <div class="project" id="project1">
                 <div class="project-title">
                     <img class="hidden" src="icons/github.png">
-                    <div class="project-name">Cryptocurrency Discord Bot</div>
-                    <a class="project-link" href="https://github.com/nickwithers126/crypto-discord-bot" target="_blank" rel="noopener noreferrer"><img src="icons/github.png"></a>
+                    <div class="project-name">LogoBuddy – AI Logo Generator</div>
+                    <a class="project-link" href="https://github.com/nickwithers126/logo-gen-app" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
                 </div>
-                <img class="project-image" src="projects/crypto-bot.gif">
+                <img class="project-image" src="projects/logobuddy.png">
+                <div class="project-live-link" style="margin-top: 7px; margin-bottom: -5px;">
+                    <a href="https://logobuddy.app" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: white;">
+                        logobuddy.app
+                    </a>
+                </div>
                 <ul class="project-description">
-                    <li>discord bot written in python which displays live cryptocurrency price information</li>
-                    <li>the current price of a user specified coin is displayed as the bot's status and refreshes every 30 seconds</li>
-                    <li>uses livecoinwatch api to get various price data for the top 25 coins by marketcap</li>
-                    <li>5 supported commands</li>
-                </ul> 
+                    <li>Built an AI-powered minimalist logo generator using Next.js, Tailwind, and OpenAI’s gpt-image-1
+                        vision model</li>
+                    <li>Designed a responsive UI with real-time loading states, controlled form inputs, and dynamic
+                        image rendering and download functionality</li>
+                </ul>
             </div>
 
             <div class="project" id="project2">
                 <div class="project-title">
                     <img class="hidden" src="icons/github.png">
-                    <div class="project-name">Photo Stitching</div>
-                    <a class="project-link" href="https://github.com/nickwithers126/ecs174-hw2" target="_blank" rel="noopener noreferrer"><img src="icons/github.png"></a>
+                    <div class="project-name">Company Website</div>
+                    <a class="project-link" href="https://github.com/nickwithers126/lycheebyte-site" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
                 </div>
-                <img class="project-image" src="projects/pano-project.jpg">
+                <img class="project-image" src="projects/lycheebyte.png">
+                <div class="project-live-link" style="margin-top: 7px; margin-bottom: -5px;">
+                    <a href="https://lycheebyte.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: white;">
+                        lycheebyte.com
+                    </a>
+                </div>
                 <ul class="project-description">
-                    <li>written in MATLAB for introduction to computer vision class</li>
-                    <li>creates homography to stitch two pictures together and form a panorama image</li>
-                    <li>uses harris corner detecions, simple descriptors, and ransac to figure out which pixels match up</li>
-                </ul> 
+                    <li>Designed and developed a modern, single-page corporate website using Next.js and Tailwind</li>
+                    <li>Implemented smooth scrolling navigation across sections like Services, Projects, and Contact to
+                        support a clean, streamlined user experience</li>
+                </ul>
             </div>
 
             <div class="project" id="project3">
                 <div class="project-title">
                     <img class="hidden" src="icons/github.png">
-                    <div class="project-title">Generative Art</div>
-                    <a class="project-link" href="https://github.com/nickwithers126/nick-website/blob/main/p5script.js" target="_blank" rel="noopener noreferrer"><img src="icons/github.png"></a>
+                    <div class="project-name">Cryptocurrency Discord Bot</div>
+                    <a class="project-link" href="https://github.com/nickwithers126/crypto-discord-bot" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
                 </div>
-                <img class="project-image" src="projects/art.PNG">
+                <img class="project-image" src="projects/crypto-bot.gif">
                 <ul class="project-description">
-                    <li>generative art created using p5.js creative coding javascript library</li>
-                    <li>different piece of art everytime when refreshed</li>
-                    <li>interactive gallery made from 6 scripts and custom bootstrap carousel</li>
-                    <li>each one utilizes different built in math and geometry functions</li>
-                    <li>see more on the gallery page of this website</li>
-                </ul> 
+                    <li>Created a Python-based Discord bot that displays live cryptocurrency prices using the
+                        LiveCoinWatch API</li>
+                    <li>Supports 5 commands and auto-refreshes status every 30 seconds with real-time price data for the
+                        top 25 coins</li>
+                </ul>
             </div>
 
             <div class="project" id="project4">
                 <div class="project-title">
                     <img class="hidden" src="icons/github.png">
+                    <div class="project-name">Photo Stitching</div>
+                    <a class="project-link" href="https://github.com/nickwithers126/ecs174-hw2" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
+                </div>
+                <img class="project-image" src="projects/pano-project.jpg">
+                <ul class="project-description">
+                    <li>Built a panorama image generator in MATLAB using Harris corner detection, simple descriptors,
+                        and RANSAC to align features</li>
+                    <li>Developed as part of a Computer Vision course to demonstrate image homography and stitching</li>
+                </ul>
+            </div>
+
+            <div class="project" id="project5">
+                <div class="project-title">
+                    <img class="hidden" src="icons/github.png">
+                    <div class="project-title">Generative Art</div>
+                    <a style="visibility: hidden; pointer-events: none;" class="project-link"
+                        href="https://github.com/nickwithers126/nick-website/blob/main/p5script.js" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
+                </div>
+                <img class="project-image" src="projects/p5.PNG">
+                <ul class="project-description">
+                    <li>Developed interactive generative art pieces using p5.js that render unique visuals on refresh
+                    </li>
+                    <li>Leveraged creative coding techniques with geometry and math-based logic to produce distinct
+                        compositions</li>
+                </ul>
+            </div>
+
+            <div class="project" id="project6">
+                <div class="project-title">
+                    <img class="hidden" src="icons/github.png">
                     <div class="project-title">Personal Website</div>
-                     <a class="project-link" href="https://github.com/nickwithers126/nick-website" target="_blank" rel="noopener noreferrer"><img src="icons/github.png"></a>
+                    <a class="project-link" href="https://github.com/nickwithers126/nick-website" target="_blank"
+                        rel="noopener noreferrer"><img src="icons/github.png"></a>
                 </div>
                 <img class="project-image" src="projects/home.gif">
                 <ul class="project-description">
-                    <li>personal (this) website created using html, css, and javascript</li>
-                    <li>mulitple responsive pages to all screen sizes</li>
-                    <li>simplistic design with interative elements</li>
-                </ul> 
+                    <li>Designed and built a minimalist, responsive portfolio website using HTML, CSS, and JavaScript
+                    </li>
+                    <li>Features multiple interactive sections and adapts cleanly across screen sizes and devices</li>
+                </ul>
             </div>
 
         </div>
